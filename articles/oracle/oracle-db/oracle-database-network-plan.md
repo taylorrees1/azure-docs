@@ -25,13 +25,13 @@ Default network features enable basic network connectivity for both new and exis
 
 Advanced network features enhance the virtual networking experience, offering improved security, performance, and control—similar to standard Azure VMs. These features are currently in public preview and available in the following regions: 
 
-Australia East 
-Central US 
-East US 
-East US2 
-US West  
-UK South 
-UK West
+* Australia East 
+* Central US 
+* East US 
+* East US2 
+* US West  
+* UK South 
+* UK West
 
 [!NOTE]
 Advanced network features are currently supported only for new ODAA deployments. 
@@ -39,6 +39,14 @@ Advanced network features are currently supported only for new ODAA deployments.
 
 Registration Required: 
  To use advanced network features, you must first register using the commands below before creating your virtual network for the ODAA deployment. 
+
+ ```
+ Register-AzProviderFeature  -FeatureName "EnableRotterdamSdnApplianceForOracle" -ProviderNamespace "Microsoft.Baremetal" 
+ ```
+ ```
+ Register-AzProviderFeature  -FeatureName "EnableRotterdamSdnApplianceForOracle" -ProviderNamespace "Microsoft.Network" 
+ ```
+ 
 
 ## Supported topologies
 
