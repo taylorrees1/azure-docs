@@ -15,28 +15,51 @@ In this article, learn about network topologies and constraints in Oracle Databa
 
 After you purchase an offer through Azure Marketplace and provision the Oracle Exadata infrastructure, the next step is to create your virtual machine cluster to host your instance of Oracle Exadata Database@Azure. The Oracle database clusters are connected to your Azure virtual network via a virtual network interface card (virtual NIC) from your delegated subnet (delegated to `Oracle.Database/networkAttachment`).  
 
+## Network Features
+### Default Network Features 
+Default network features enable basic network connectivity for both new and existing ODAA deployments. These features are available across all supported ODAA regions and provide the foundational networking required for your deployment. 
+
+### Advanced Network Features
+Advanced network features enhance the virtual networking experience, offering improved security, performance, and control—similar to standard Azure VMs. These features are currently in public preview and available in the following regions: 
+
+Australia East 
+Central US 
+East US 
+East US2 
+US West  
+UK South 
+UK West 
+
+Note: 
+
+Advanced network features are currently supported only for new ODAA deployments. 
+ Existing virtual networks with previously created ODAA delegated subnets will not support these features at this time. Support for existing deployments is planned for later this year. 
+
+Registration Required: 
+ To use advanced network features, you must first register using the commands below before creating your virtual network for the ODAA deployment. 
+
 ## Supported topologies
 
 The following table describes the network topologies that are supported by each configuration of network features for Oracle Database@Azure:
 
-|Topology |Supported |
-| :------------------- |:---------------:|
-|Connectivity to an Oracle database cluster in a local virtual network| Yes |
-|Connectivity to an Oracle database cluster in a peered virtual network (in the same region)|Yes |
-|Connectivity to an Oracle database cluster in a spoke virtual network in a different region with a virtual wide area network (virtual WAN) |Yes |
-|Connectivity to an Oracle database cluster in a peered virtual network (cross-region or global peering) without a virtual WAN\* | No|
-|On-premises connectivity to an Oracle database cluster via global and local Azure ExpressRoute |Yes|
-|Azure ExpressRoute FastPath |No |
-|Connectivity from on-premises to an Oracle database cluster in a spoke virtual network over an ExpressRoute gateway and virtual network peering with a gateway transit|Yes |
-|On-premises connectivity to a delegated subnet via a virtual private network (VPN) gateway | Yes |
-|Connectivity from on-premises to an Oracle database in a spoke virtual network over a VPN gateway and virtual network peering with gateway transit| Yes |
-|Connectivity over active/passive VPN gateways| Yes |
-|Connectivity over active/active VPN gateways| No |
-|Connectivity over active/active zone-redundant gateways| Yes |
-|Transit connectivity via a virtual WAN for an Oracle database cluster provisioned in a spoke virtual network| Yes |
-|On-premises connectivity to an Oracle database cluster via a virtual WAN and attached software-defined wide area network (SD-WAN)|No|
-|On-premises connectivity via a secured hub (a firewall network virtual appliance) |Yes|
-|Connectivity from an Oracle database cluster on Oracle Database@Azure nodes to Azure resources|Yes|
+|Topology |Default Network Features| Advanced | 
+|:-------------------- :|:-------------------:|: ---------------- :| 
+|Connectivity to an Oracle database cluster in a local virtual network| Yes | Yes|
+|Connectivity to an Oracle database cluster in a peered virtual network (in the same region)|Yes | |
+|Connectivity to an Oracle database cluster in a spoke virtual network in a different region with a virtual wide area network (virtual WAN) |Yes | |
+|Connectivity to an Oracle database cluster in a peered virtual network (cross-region or global peering) without a virtual WAN\* | No| |
+|On-premises connectivity to an Oracle database cluster via global and local Azure ExpressRoute |Yes| |
+|Azure ExpressRoute FastPath |No | |
+|Connectivity from on-premises to an Oracle database cluster in a spoke virtual network over an ExpressRoute gateway and virtual network peering with a gateway transit|Yes | |
+|On-premises connectivity to a delegated subnet via a virtual private network (VPN) gateway | Yes | |
+|Connectivity from on-premises to an Oracle database in a spoke virtual network over a VPN gateway and virtual network peering with gateway transit| Yes | |
+|Connectivity over active/passive VPN gateways| Yes | |
+|Connectivity over active/active VPN gateways| No | |
+|Connectivity over active/active zone-redundant gateways| Yes | |
+|Transit connectivity via a virtual WAN for an Oracle database cluster provisioned in a spoke virtual network| Yes | |
+|On-premises connectivity to an Oracle database cluster via a virtual WAN and attached software-defined wide area network (SD-WAN)|No| |
+|On-premises connectivity via a secured hub (a firewall network virtual appliance) |Yes| |
+|Connectivity from an Oracle database cluster on Oracle Database@Azure nodes to Azure resources|Yes| |
 
 \* You can overcome this limitation by using a site-to-site VPN.
 
