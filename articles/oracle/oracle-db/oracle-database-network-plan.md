@@ -46,7 +46,7 @@ Registration Required:
  ```
  Register-AzProviderFeature  -FeatureName "EnableRotterdamSdnApplianceForOracle" -ProviderNamespace "Microsoft.Network" 
  ```
- 
+
 
 ## Supported topologies
 
