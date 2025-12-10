@@ -25,9 +25,9 @@ The list below mentions the Azure and corresponding OCI regions with the regiona
 
 | Azure region   | OCI region   | Oracle Exadata Database@Azure | Oracle Autonomous Database@Azure | Oracle Database Autonomous Recovery Service@Azure | Exadata Database Service on Exascale Infrastructure@Azure | BaseDB | Golden Gate | Regional Availability |
 | -------------- | ----------------------- | ----------------------------- | -------------------------------- | -------- |---------|---------|---------|-----|
-| Australia East | Australia East (Sydney) | ✓         | ✓      | ✓ | ✓ | Preview available | |  Dual   |
+| Australia East | Australia East (Sydney) | ✓         | ✓      | ✓ | ✓ | Preview available | ✓ |  Dual   |
 | Australia Southeast | Australia Southeast (Melbourne) | ✓        | ✓ | | |  | |   Dual   |
-| Central India | India West (Mumbai) | ✓  | ✓ | | | | |   Single   |
+| Central India | India West (Mumbai) | ✓  | ✓ | ✓ | | | |   Single   |
 | Japan East | Japan East (Tokyo) | ✓  | ✓  | ✓ | ✓ | ✓ | ✓ |   Dual   |
 | Japan West | Japan Central (Osaka) | ✓  | ✓ | | | | |   Single   |
 | South India | 	India South (Chennai) | ✓  |  | | | | |   Single   |
@@ -47,7 +47,7 @@ The list below mentions the Azure and corresponding OCI regions with the regiona
 |------------|--|--------------------------|------------------------------| ------| ---- | ---- |----|-------|
 | France Central       |France central (Paris) | ✓   | ✓ | ✓ | ✓ | | |  Dual |
 | France South | France South (Marseille) |  ✓  | | | | | |   Single   |
-| Germany North |Germany Central (Frankfurt) | ✓  | ✓ | | | | |   Single    |
+| Germany North |Germany Central (Frankfurt) | ✓  | ✓ |  | ✓ | | |   Single    |
 | Germany West Central |Germany Central (Frankfurt) |  ✓  | ✓ | ✓ | ✓ | ✓ | ✓ | Dual |
 | Italy North | Italy North (Milan)   | ✓   | ✓   | ✓ |  ✓ | ✓ | ✓ | Dual |
 | North Europe | Ireland (Dublin) | ✓  | ✓ |   | | | |   Dual   |
@@ -66,7 +66,7 @@ The list below mentions the Azure and corresponding OCI regions with the regiona
 | ---------------- | -------------------------- | ----------------------------- | -------------------------------- | ------------------------------------------------- | --------------------------------------------------------- | ----------------- | --------------------- |---------|
 | Canada Central   | Canada Southeast (Toronto) | ✓      | ✓   |  ✓  | ✓   | ✓ | ✓ |  Dual |
 | Canada East | Canada Southeast (Montreal) | ✓  | ✓ | | | | |   Single    |
-| Central US       | US Midwest (Chicago)       | ✓       | ✓      | ✓    |  ✓   |  ✓  |      | Dual    |
+| Central US       | US Midwest (Chicago)       | ✓       | ✓      | ✓    |  ✓   |  ✓  |    ✓  | Dual    |
 | East US          | US East (Ashburn)          | ✓     | ✓      | ✓      | ✓     | ✓ | ✓ | Dual|
 | East US 2        | US East (Ashburn)          | ✓    | ✓         | ✓       |  ✓   |   |  | Dual     |
 | North Central US | US Midwest (Chicago)   | ✓    |       |      |     |  |  | Single   |
