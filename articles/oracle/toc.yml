@@ -31,6 +31,12 @@ items:
     items:
     - name: Onboard Oracle Database@Azure
       href: oracle-db/onboard-oracle-database.md
+  - name: Oracle Applications
+    items:
+    - name: PeopleSoft
+      href: https://docs.oracle.com/en-us/iaas/Content/database-at-azure/azuoa-oracle-applications-oa-peoplesoft.html
+    - name: Enterprise Performance Management
+      href: https://docs.oracle.com/en-us/iaas/Content/database-at-azure/azuoa-oracle-applications-oa-enterprise-performance-management.html
   - name: Design considerations 
     items:
     - name: Design considerations for Oracle Database@Azure
